@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36375FB2-BD69-4280-B193-2BF3675CF06E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAn_CNNet</RootNamespace>
+    <AssemblyName>DoAn_CNNet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAccount.Designer.cs">
+      <DependentUpon>fmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmAdmin.Designer.cs">
+      <DependentUpon>fmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmBaoCao.Designer.cs">
+      <DependentUpon>fmBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDangKy.Designer.cs">
+      <DependentUpon>fmDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDangNhap.Designer.cs">
+      <DependentUpon>fmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmHangSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmHangSX.Designer.cs">
+      <DependentUpon>fmHangSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmHoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmHoaDonNhap.Designer.cs">
+      <DependentUpon>fmHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmHoaDonXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmHoaDonXuat.Designer.cs">
+      <DependentUpon>fmHoaDonXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmKhachHang.Designer.cs">
+      <DependentUpon>fmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmSalesman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmSalesman.Designer.cs">
+      <DependentUpon>fmSalesman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmLoaiThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmLoaiThuoc.Designer.cs">
+      <DependentUpon>fmLoaiThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmLoThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmLoThuoc.Designer.cs">
+      <DependentUpon>fmLoThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmMain.Designer.cs">
+      <DependentUpon>fmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmNhaCungCap.Designer.cs">
+      <DependentUpon>fmNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmThuoc.Designer.cs">
+      <DependentUpon>fmThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmNhanVien.Designer.cs">
+      <DependentUpon>fmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\fmAccountManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\fmAccountManage.Designer.cs">
+      <DependentUpon>fmAccountManage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fmAccount.resx">
+      <DependentUpon>fmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmAdmin.resx">
+      <DependentUpon>fmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmDangKy.resx">
+      <DependentUpon>fmDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmDangNhap.resx">
+      <DependentUpon>fmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmHangSX.resx">
+      <DependentUpon>fmHangSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmHoaDonNhap.resx">
+      <DependentUpon>fmHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmHoaDonXuat.resx">
+      <DependentUpon>fmHoaDonXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmKhachHang.resx">
+      <DependentUpon>fmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmLoaiThuoc.resx">
+      <DependentUpon>fmLoaiThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmLoThuoc.resx">
+      <DependentUpon>fmLoThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmMain.resx">
+      <DependentUpon>fmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmNhaCungCap.resx">
+      <DependentUpon>fmNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmSalesman.resx">
+      <DependentUpon>fmSalesman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmThuoc.resx">
+      <DependentUpon>fmThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmNhanVien.resx">
+      <DependentUpon>fmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\fmAccountManage.resx">
+      <DependentUpon>fmAccountManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-16 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-pane-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
